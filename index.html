@@ -34,22 +34,53 @@
         }
 
         #cuerpopag {
-            font-family:"Press+Start+2P";
+            font-family: "Press+Start+2P";
             color: white;
         }
 
+        #esevganim {
+            margin: auto;
+            width: 3%;
+            position: relative;
+            animation-name: corazon;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes corazon {
+            0% {
+                left: 0px;
+            }
+
+            25% {
+                left: 25px;
+            }
+
+            50% {
+                left: 0px;
+            }
+
+            75% {
+                left: -25px;
+            }
+
+            100% {
+                left: 0px;
+            }
+
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div id="inicio">  
+    <div id="inicio">
         <br>
         <header>
-            <div id="esevg" style=widht:25%;>
+            <div id="esevganim" style=widht:25%;>
                 <svg width="35px" height="35px" viewBox="0 0 1024 1024" class="icon" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg" ;>
                     <path
                         d="M927.4 273.5v-95.4h-87.9V82.8h-201v95.3h-87.9v95.4h-78.5v-95.4h-88V82.8H183.2v95.3H95.3v95.4H16.7v190.6h78.6v95.4h75.3v95.3H246v95.3h87.9v95.4h100.5v95.3h153.9v-95.3h100.4v-95.4h88v-95.3H852.1v-95.3h75.3v-95.4h78.5V273.5z"
                         fill="#E02D2D" />
@@ -57,11 +88,15 @@
             </div>
         </header>
 
-        <h1 style="font-size:50px;color:#5B0707;background-color:rgba(255, 255, 255, 0.5);border-radius: 25px;"><ins>Mi
+        <br>
+
+        <h1 style="font-size:50px;color:#5B0707;background-color:rgba(255, 255, 255, 0.5);border-radius: 25px;width:25%;margin: auto;"><ins>Mi
                 primera web</ins></h1>
-        <nav style="background-color:rgba(255, 255, 255, 0.2) ;font-size:30px;border-radius: 50px;">
+                <br>
+        <nav style="background-color:rgba(255, 255, 255, 0.2) ;font-size:30px;border-radius: 50px;width: 50%;margin: auto;">
             <a href="index.html" style="color:  rgba(255, 255, 255, 0.6);;"> Inicio</a> ]
-            <a href="fotosunmomento.html" style="color:  rgba(255, 255, 255, 0.6);;">Fotos </a> ]
+            <a href="fotosunmomento.html" style="color:  rgba(255, 255, 255, 0.6);;">Fotos</a> ]
+            <a href="" style="color:  rgba(255, 255, 255, 0.6);;">Links!</a> ]
         </nav>
         <br>
         <img alt="Paisaje ciudad" id="imagen1" widht="150" height="200"
@@ -70,27 +105,27 @@
         <br><br>
 
         <a href="https://github.com/Jaumejoan04" target="_blank">
-            <button style="font-size:25px;background-color:#5B0707;color:#FFFFFF;font-family:Cute Font;">Enlace a mi portfolio</button>
+            <button style="font-size:25px;background-color:#5B0707;color:#FFFFFF;font-family:Cute Font;">Enlace a mi
+                portfolio</button>
         </a>
 
-        <br><br><br>
+        <br><br>
 
         <a href="mailto:jaumejoanmesquidaboyeras@a.iespoltecnic.cat;" target="_blank">
-            <button style="font-size:22px;background-color:#000000;color:#FFFFFF;padding:15px;font-family: Cute Font;">Mi email!</button></a>
+            <button
+                style="font-size:22px;background-color:#000000;color:#FFFFFF;padding:15px;font-family: Cute Font;">Mi
+                email!</button></a>
 
 
-        <br><br><br>
+        <br><br>
 
     </div>
 
     <div id="cuerpopag">
-        <header style=color:white;>
-            HOLAAAA!
-        </header>
-        <section style="color: white;">
-            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quae dolore ea adipisci quos cumque
-                consectetur libero velit?</p>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, consectetur recusandae veritatis officia
-                possimus, quo cum dol</p>
-        </section>
+        <div>
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/2mNEcE3KvA1liNQgXfcCJ4?utm_source=generator&theme=0"
+            width="50%" height="20%" frameBorder="0" allowfullscreen="yes"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
     </div>
