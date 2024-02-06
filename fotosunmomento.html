@@ -20,6 +20,37 @@
             background: url("https://sadhost.neocities.org/images/tiles/stars5.gif");
         }
 
+        #esevganim {
+            margin: auto;
+            width: 3%;
+            position: relative;
+            animation-name: corazon;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes corazon {
+            0% {
+                left: 0px;
+            }
+
+            25% {
+                left: 25px;
+            }
+
+            50% {
+                left: 0px;
+            }
+
+            75% {
+                left: -25px;
+            }
+
+            100% {
+                left: 0px;
+            }
+
+        }
 
         #headerprueba {
             text-align: center;
@@ -77,12 +108,15 @@
             border: 12px solid #5B0707
             
         }
+
+
+
     </style>
     </head>
 
     <header>
         <br>
-        <div id="esevg" style=widht:25%;>
+        <div id="esevganim" style=widht:25%;>
             <svg width="35px" height="35px" viewBox="0 0 1024 1024" class="icon" version="1.1"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -93,15 +127,16 @@
     </header>
 
     <br>
-    <h1 style="font-size:50px;color:#5B0707;background-color:rgba(255, 255, 255, 0.5);border-radius: 25px;"><ins>Mi
+    <h1 style="font-size:50px;color:#5B0707;background-color:rgba(255, 255, 255, 0.5);border-radius: 25px;width:25%;margin: auto;"><ins>Mi
             primera web</ins></h1>
-
-    <nav style="background-color:rgba(255, 255, 255, 0.2);font-size:30px;border-radius: 50px;">
+    <br>
+    <nav style="background-color:rgba(255, 255, 255, 0.2);font-size:30px;border-radius: 50px;width:50%;margin: auto;">
         <a href="index.html" style="color: rgba(255, 255, 255, 0.6);"> Inicio</a> ]
-        <a href="fotosunmomento.html" style="color: rgba(255, 255, 255, 0.6);">Fotos </a> ]
+        <a href="fotosunmomento.html" style="color: rgba(255, 255, 255, 0.6);">Fotos</a> ]
+        <a href="" style="color: rgba(255, 255, 255, 0.6);">Links!</a> ]
     </nav>
 
-    <br><br>
+    <br>
 
     <div id="contenedorcollage">
         <div id="primera" class="grid">
