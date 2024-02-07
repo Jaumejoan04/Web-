@@ -1,0 +1,242 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Página Jotaj</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<body>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Cute+Font");
+        @import url("https://fonts.googleapis.com/css?family=Rethink+Sans");
+
+        * {
+            text-align: center;
+
+        }
+
+        body {
+            background: url("https://sadhost.neocities.org/images/tiles/stars5.gif");
+        }
+
+        #esevganim {
+            margin: auto;
+            width: 3%;
+            position: relative;
+            animation-name: corazon;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes corazon {
+            0% {
+                left: 0px;
+                transform: rotateZ(0);
+            }
+
+            25% {
+                left: 25px;
+                transform: rotateZ(+15deg);
+            }
+
+            50% {
+                left: 0px;
+                transform: rotateZ(0);
+            }
+
+            75% {
+                left: -25px;
+                transform: rotateZ(-15deg);
+            }
+
+            100% {
+                left: 0px;
+                transform: rotateZ(0deg);
+            }
+
+        }
+
+        #headerprueba {
+            text-align: center;
+            background-color: rgba(205, 59, 59, 0.5);
+        }
+
+        .grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 33.333%;
+        }
+
+        .grid img {
+            width: 100%;
+            height: 20vh;
+        }
+
+        #primera {
+            left: 0%;
+            top: 0%;
+        }
+
+        #segunda {
+            left: 33.3333%;
+            top: 0%;
+
+        }
+
+        #segunda img {
+            height: 36vh;
+        }
+
+        #tercera {
+            left: 66.66%;
+            top: 0%;
+        }
+
+        #cuarta {
+            left: 0%;
+            top: 44%;
+        }
+
+        #quinta {
+            left: 66.666%;
+            top: 44%;
+        }
+
+        #contenedorcollage {
+            position: relative;
+            width: 40%;
+            height: 36vh;
+            margin: auto;
+            border: 8px solid #5B0707
+        }
+
+        #cuerpopag {
+            width: 50%;
+            margin: auto;
+            height: auto;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            font-family: 'Rethink Sans';
+            font-size: 14px;
+        }
+
+        #cuerpopag article {
+            width: 45%;
+            float: left;
+        }
+
+        #cuerpopag nav {
+            width: 50%;
+            float: left;
+        }
+    </style>
+    </head>
+
+    <header>
+        <br>
+        <div id="esevganim" style=widht:25%;><a href="index.html">
+                <svg width="35px" height="35px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M927.4 273.5v-95.4h-87.9V82.8h-201v95.3h-87.9v95.4h-78.5v-95.4h-88V82.8H183.2v95.3H95.3v95.4H16.7v190.6h78.6v95.4h75.3v95.3H246v95.3h87.9v95.4h100.5v95.3h153.9v-95.3h100.4v-95.4h88v-95.3H852.1v-95.3h75.3v-95.4h78.5V273.5z"
+                        fill="#E02D2D" />
+                </svg>
+        </div></a>
+    </header>
+    <!--NAV+LOGO+TÍTULO-->
+    <br>
+    <div style="font-family: 'Cute Font'" ;>
+        <h1 style="font-size:50px;color:#5B0707;background-color:rgba(255, 255, 255, 0.5);border-radius:
+        25px;width:25%;margin: auto;">
+            <ins>¡Mis fotos!</ins>
+        </h1>
+        <br>
+        <nav
+            style="background-color:rgba(255, 255, 255, 0.2);font-size:30px;border-radius: 50px;width:50%;margin: auto;">
+            <a href="index.html" style="color: rgba(255, 255, 255, 0.6);"> Inicio</a> ]
+            <a href="fotosunmomento.html" style="color: rgba(255, 255, 255, 0.6);">Fotos</a> ]
+            <a href="musica.html" style="color: rgba(255, 255, 255, 0.6);">Musica</a> ]
+        </nav>
+    </div>
+    <hr style="width: 47%;">
+    <br>
+    <!--COLLAGE FOTOS-->
+    <div id="contenedorcollage">
+        <div id="primera" class="grid">
+            <img src="https://art.pixilart.com/64d7af9a8ae27aa.png">
+        </div>
+
+        <div id="segunda" class="grid">
+            <img src="https://art.pixilart.com/sr2fee7812a6aaws3.png">
+        </div>
+
+        <div id="tercera" class="grid">
+            <img src="https://art.pixilart.com/sr29bcf43e26034.png">
+        </div>
+
+        <div id="cuarta" class="grid">
+            <img src="https://art.pixilart.com/8fcae9b4c4e5a38.png">
+        </div>
+
+        <div id="quinta" class="grid">
+            <img src="https://art.pixilart.com/sr22e52195594aws3.png">
+        </div>
+    </div>
+    <!--CUERPO PAG-->
+    <br>
+    <hr style="width: 47%;">
+    <div id="cuerpopag">
+        <br>
+        <header style="height: 2px;margin-bottom: 3%;">
+            <h3><Ins>Galeria de fotos:</ins></h3>
+        </header>
+        <section style="display: flex;">
+            <nav>
+                <img style="width:50%;margin: 5%;"
+                    src="https://i.pinimg.com/736x/4c/fa/18/4cfa18748fd3aa6f95133b7506421f17.jpg">
+            </nav>
+            <article>
+                <p style="text-align: left;margin: 5%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+                    natus, necessitatibus beatae, tempora
+                    in quam praesentium autem quas velit, ad voluptas quae voluptatum. Dignissimos cumque neque commodi
+                    sequi, culpa ipsa? Facere, perspiciatis? Fugit. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Iste ut eaque
+                    animi amet, qui veritatis beatae fugit magni in quis illum nostrum reiciendis harum consectetur quos
+                    natus ab quidem nisi! Lorem ipsum. </p>
+            </article>
+        </section>
+        <footer style="width:83%;margin-left: 12%;margin-right: 12%;">
+            <p style="text-align: left;padding-bottom: 2%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quam nobis
+                error aperiam sunt maiores
+                laborum. Optio totam iusto ipsam accusamus asperiores quaerat maxime ducimus similique non quia?
+                Facere, perspiciatis? Fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ut eaque
+                animi amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sunt nesciunt eligendi ad,
+                reiciendis numquam ducimus sint eos animi ullam neque aspernatur distinctio velit ab in odit magni
+                incidunt veritatis!</p>
+        </footer>
+    </div>
+    <br><br>
+    <!--PIE PAGINA-->
+    <div style="margin: auto;width: 50%;">
+        <div>
+
+            <a href="https://twitter.com/Chamberlaincof?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank">
+                <img style="width:8%;float: left;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrFEgDYHowXjDocpF42Bul7spMPHqTlMWvxrapi41S4g&s">
+
+                <a href="https://www.instagram.com/emmachamberlain/?hl=es" target="_blank">
+                    <img style="width:8%;float: left;"
+                        src="https://assets.stickpng.com/thumbs/5a4e42e52da5ad73df7efe79.png">
+
+                    <a href="tel:+34918365365" target="_blank">
+                        <img style="width:10%;float: right;margin: 5px;"
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/53f59ee3-60ce-4d32-8885-c6f05457259c/dfoc735-a219e411-8274-4399-bcfb-696d65981c43.png/v1/fit/w_400,h_400/vintage_phone_png_transparent_background__26__by_anavrin_stock_dfoc735-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUzZjU5ZWUzLTYwY2UtNGQzMi04ODg1LWM2ZjA1NDU3MjU5Y1wvZGZvYzczNS1hMjE5ZTQxMS04Mjc0LTQzOTktYmNmYi02OTZkNjU5ODFjNDMucG5nIiwiaGVpZ2h0IjoiPD00MDAiLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzUzZjU5ZWUzLTYwY2UtNGQzMi04ODg1LWM2ZjA1NDU3MjU5Y1wvYW5hdnJpbi1zdG9jay00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.zv-KkIz21Ck3lOP4RWOG-64kqmvJ3FKySfac3gekFaE">
+                        <p style="float: right;font-family: 'Rethink Sans';"><a href="tel:+34918365365"
+                                style="color: rgba(255, 255, 255, 0.5);">+34
+                                918 36 53 65</a></p>
+        </div>
+    </div>
