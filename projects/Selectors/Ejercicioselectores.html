@@ -1,0 +1,729 @@
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Ejercicioselectores.css" type="text/css">
+
+<head>
+</head>
+
+<body>
+    <br>
+    <h5 id="sectores" style="text-align: center;">EJERCICIO SELECTORES</h5>
+    <hr>
+    <h5 id="sectores" id="a">A. AGRUPACIÓN DE SELECTORES:</h5>
+    <hr>
+    <!---EJERCICIO 1-->
+    <h5>EJERCICIO 1 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b>En este ejercicio vamos a utilizar el selector múltiple, su sintaxis es esta: "elemento, elemento
+                {atributos}" y sirve para seleccionar varios elementos a la vez.<b></p>
+    </div>
+    <h5>EJERCICIO 1 MUESTREO:</h5>
+    <div class="capsula">
+        <h1>Los dos headings tienen el fondo naranja ya que están los dos en el selector</h1>
+        <h2>Los dos headings tienen el fondo naranja ya que están los dos en el selector</h2>
+    </div>
+    <h5>EJERCICIO 1 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;style&gt;
+            h1, h2 {
+            background-color: orange;
+        }
+            &lt;/style&gt;
+            &lt;body&gt;
+                 &lt;h1&gt;Los dos headings tienen el fondo naranja ya que están los dos seleccionados en el selector&lt;/h1&gt;
+                 &lt;h2&gt;Los dos headings tienen el fondo naranja ya que están los dos seleccionados en el selector&lt;/h2&gt;
+                 &lt;/body&gt;</pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 2-->
+    <h5>EJERCICIO 2 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b>En este ejercicio vamos a utilizar un selector más concreto, su sintaxis es esta: "elemento elemento
+                {atributos}", la sintaxis de este selector es casi idéntica a la anterior pero quitando la coma entre
+                los elementos. Este selector sirve para especificar un elemento dentro de otro, como por ejemplo un
+                párrafo dentro de un div "div p {atributos}".<b></p>
+    </div>
+    <h5>EJERCICIO 2 MUESTREO:</h5>
+    <div class="capsula">
+        <img id="#imagen"
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8cbad7101307167.5f1baa33d49e6.gif">
+        <h4> Esta imagen "png." tiene el fondo verde ya que es una imagen que está dentro de un div. </h4>
+    </div>
+    <h5>EJERCICIO 2 CÓDIGO REAL:</h5>
+    <div class=capsula>
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                .capsula img {
+                    background-color: green;
+                    width: 25%;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;img id="#imagen" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8cbad7101307167.5f1baa33d49e6.gif"&gt;
+            &lt;h4&gt; Esta imagen "png." tiene el fondo verde ya que es una imagen que está dentro de un div. &lt;/h4&gt;
+        &lt;/body&gt;</pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 3-->
+    <h5>EJERCICIO 3 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b>La sintaxis de este selector sería así: "elementopadre > elementohijo {atributo}". Sirve para dirigirnos a
+                un elemento en el que el "elementopadre" sea un elemento en específico, como por ejemplo: "span>p" ,
+                como
+                és el caso del ejercicio de abajo. En este caso si el "elementopadre" fuese un div o cualquier otro
+                elemento no funcionaría. <b></p>
+    </div>
+    <h5>EJERCICIO 3 MUESTREO:</h5>
+    <div class="capsula">
+        <span>
+            <p>Hola que tal, estoy lila porque estoy dentro de un span.</p>
+        </span>
+        <p>Hola que tal, no estoy lila porque no estoy dentro de un span</p>
+    </div>
+    <h5>EJERCICIO 3 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                span&gt;p {
+            color: blueviolet;
+        }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;span&gt;&lt;p&gt;Hola que tal, estoy lila porque estoy dentro de un span.&lt;/p&gt;&lt;/span&gt;
+                &lt;p&gt;Hola que tal, no estoy lila porque no estoy dentro de un span&lt;/p&gt;
+        &lt;/body&gt;</pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 4-->
+    <h5>EJERCICIO 4 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b>La sintaxis de este tipo de selector es: "elemento+elemento {atributos}". Este selector, nos permite
+                seleccionar un elemento que vaya inmediatamente después de otro, como por ejemplo en el ejercicio de
+                abajo, un "p" que vaya después de un "h4".<b></p>
+    </div>
+    <h5>EJERCICIO 4 MUESTREO:</h5>
+    <div class="capsula">
+        <h4>Soy el H4</h4>
+        <p>Si porque estoy inmediatamente detrás del h4</p>
+        <p>No porque no estoy inmediatamente detrás del h4</p>
+        <h4>Soy el H4</h4>
+        <p>Si porque estoy inmediatamente detrás del h4</p>
+        <p>No porque no estoy inmediatamente detrás del h4</p>
+        <h4>Soy el H4</h4>
+        <span>No porque soy un span</span>
+        <p>No porque no estoy inmediatamente detrás del h4</p>
+        <p>No porque no estoy inmediatamente detrás del h4</p>
+    </div>
+    <h5>EJERCICIO 4 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                h4+p {
+                    background-color: red;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;h4&gt;Soy el H4&lt;/h4&gt;
+            &lt;p&gt;Si porque estoy inmediatamente detrás del h4&lt;/p&gt;
+            &lt;p&gt;No porque no estoy inmediatamente detrás del h4&lt;/p&gt;
+            &lt;h4&gt;Soy el H4&lt;/h4&gt;
+            &lt;p&gt;Si porque estoy inmediatamente detrás del h4&lt;/p&gt;
+            &lt;p&gt;No porque no estoy inmediatamente detrás del h4&lt;/p&gt;
+            &lt;h4&gt;Soy el H4&lt;/h4&gt;
+            &lt;span&gt;No porque soy un span&lt;/span&gt;
+            &lt;p&gt;No porque no estoy inmediatamente detrás del h4&lt;/p&gt;
+            &lt;p&gt;No porque no estoy inmediatamente detrás del h4&lt;/p&gt;
+        &lt;/body&gt;</pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 5-->
+    <!---CAMBIAR CODIGO ESCRITO-->
+    <h5>EJERCICIO 5 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b>En este ejercicio vamos a utilizar el selector con virgulilla, su sintaxis sería así: "elemento~elemento
+                {atributos}". Este selector es muy útil para seleccionar elementos precedidos de otro. Por ejemplo a
+                continuación veremos como después del span el fondo de los h3 se colorea. <b></p>
+    </div>
+    <h5>EJERCICIO 5 MUESTREO:</h5>
+    <div class="capsula">
+        <h3>ESTOY ANTES DEL SPAN.</h3>
+        <h3>ESTOY ANTES DEL SPAN.</h3>
+        <span>
+            <h3>ESTO ES EL SPAN.</h3>
+            <h3>ESTO ES EL SPAN.</h3>
+            <h3>ESTO ES EL SPAN.</h3>
+        </span>
+        <h3>ME COLOREO PORQUE ESTOY DETRÁS DEL SPAN.</h3>
+        <h3>YO NO ESTOY ADYACENTE AL SPAN PERO COMO TAMBIÉN ESTOY DETRÁS TAMBIÉN ME COLOREO.</h3>
+        <span>YO NO PORQUE SOY UN SPAN</span>
+    </div>
+    <h5>EJERCICIO 5 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                span~h3 {
+                    background-color: pink;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;h3&gt;ESTOY ANTES DEL SPAN.&lt;/h3&gt;
+            &lt;h3&gt;ESTOY ANTES DEL SPAN.&lt;/h3&gt;
+            &lt;span&gt;
+                &lt;h3&gt;ESTO ES EL SPAN.&lt;/h3&gt;
+                &lt;h3&gt;ESTO ES EL SPAN.&lt;/h3&gt;
+                &lt;h3&gt;ESTO ES EL SPAN.&lt;/h3&gt;
+            &lt;/span&gt;
+            &lt;h3&gt;ME COLOREO PORQUE ESTOY DETRÁS DEL SPAN.&lt;/h3&gt;
+            &lt;h3&gt;YO NO ESTOY ADYACENTE AL SPAN PERO COMO TAMBIÉN ESTOY DETRÁS TAMBIÉN ME COLOREO.&lt;/h3&gt;
+            &lt;span&gt;YO NO PORQUE SOY UN SPAN&lt;/span&gt;
+        &lt;/body&gt;</pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <h5 id="sectores" id="b">B. SELECTORES UTILIZANDO ATRIBUTOS:</h5>
+    <hr>
+    <!---EJERCICIO 6-->
+    <h5>EJERCICIO 6 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b>A partir de aquí empezamos con los selectores de atributos, es decir que en vez de seleccionar un elemento
+                y ponerle atributos, seleccionamos el atributo en concreto y le añadimos nuevos atributos. Por ejemplo,
+                en el siguiente ejercicio le ponemos un fondo de color amarillo a los elementos que tengan el atributo
+                "a[target="_blank"]". <b></p>
+    </div>
+    <h5>EJERCICIO 6 MUESTREO:</h5>
+    <div class="capsula">
+        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute">
+            Este link no tiene color de fondo porque no tiene la propiedad target "_blank"
+        </a>
+        <br>
+        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" target="_blank">
+            Este link tiene color de fondo porque tiene la propiedad target "_blank"
+        </a>
+        <br>
+        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" target="_top">
+            Este link no tiene color de fondo porque no tiene la propiedad target "_blank"
+        </a>
+        <br>
+    </div>
+    <h5>EJERCICIO 6 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                a[target="_blank"] {
+                    background-color: yellow;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute"&gt;
+                Este link no tiene color de fondo porque no tiene la propiedad target "_blank"
+            &lt;/a&gt;
+            &lt;br&gt;
+            &lt;a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" target="_blank"&gt;
+                Este link tiene color de fondo porque tiene la propiedad target "_blank"
+            &lt;/a&gt;
+            &lt;br&gt;
+            &lt;a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" target="_top"&gt;
+                Este link no tiene color de fondo porque no tiene la propiedad target "_blank"
+            &lt;/a&gt;
+        &lt;/body&gt;</pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 7-->
+    <h5>EJERCICIO 7 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b>El siguiente selector tiene esta sintaxis: "[atributo~="palabra"] {atributos}". Nos servirá para
+                seleccionar atributos con palabras específicas, comunmente se utilizará con el atributo "title", como en
+                el ejercicio de abajo.<b></p>
+    </div>
+    <h5>EJERCICIO 7 MUESTREO:</h5>
+    <div class="capsula">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8cbad7101307167.5f1baa33d49e6.gif">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8cbad7101307167.5f1baa33d49e6.gif" title="LOL">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8cbad7101307167.5f1baa33d49e6.gif"
+            title="Coliflor">
+        <p>La imagen de en medio tiene el borde discontinuo amarillo ya que tiene el título "lol", el mismo título que
+            hemos puesto en el selector.</p>
+    </div>
+    <h5>EJERCICIO 7 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                [title~="LOL"] {
+                    border: 5px dashed yellow;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;img src="https://png.pngitem.com/pimgs/s/398-3986754_dat-boi-meme-pixel-art-hd-png-download.png"&gt;
+            &lt;img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8cbad7101307167.5f1baa33d49e6.gif" title="LOL"&gt;
+            &lt;img src="https://openseauserdata.com/files/2e20d026112ae9827f279c590f030a3e.png" title="Coliflor"&gt;
+            &lt;p&gt;La imagen de en medio tiene el borde discontinuo amarillo ya que tiene el título "lol", el mismo título que hemos
+                puesto en el selector.&lt;/p&gt;
+        &lt;/body&gt;</pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 8-->
+    <h5>EJERCICIO 8 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b>En este ejercicio veremos 3 tipos de selectores muy similares entre si. Su sintaxis es:
+                "[elemento/^/*/$/="atributo"]". Estos selectores tienen la misma función pero con diferentes
+                "parámetros", se usan para seleccionar elementos con un atributo específico. El selector que contiene el
+                símbolo "^", se utiliza para seleccionar un elemento o un atributo que EMPIEZE por un determinado valor.
+                El selector que contiene el símbolo "*", se utiliza para seleccionar un elemento que contenga un
+                determinado valor.
+                Y por último el selector que contiene el símbolo "$", se utiliza para seleccionar un elemento que acabe
+                con un determinado valor.
+                En el siguiente ejercicio se puede ver como se puede utilizar con el elemento "class".
+                <b></p>
+    </div>
+    <h5>EJERCICIO 8 MUESTREO:</h5>
+    <div class="capsula">
+        <p class="flor"> Tengo como clase la palabra "flor". Tengo el fondo coloreado ya que empiezo por "flo".</p>
+        <p class="flores"> Tengo como clase la palabra "flores". Tengo el fondo coloreado ya que empiezo por "flo",
+            también tengo el borde de color negro ya que contengo la letra "e". </p>
+        <p class="floristería"> Tengo como clase la palabra "floristería". Tengo el fondo coloreado ya que empiezo por
+            "flo", también tengo el borde de color negro ya que contengo la letra "e" y además tengo las letras de color
+            violeta ya que mi clase acaba con las letras "ía". </p>
+        <p class="avión"> Tengo como clase la palabra avión. Yo no tengo nada de lo anterior ya que no tengo ninguno de
+            esas letras ni terminos en mi clase.</p>
+        <p class="bahía"> Tengo como clase la palabra batería. Yo sí que tengo las letras en color morado ya que sí que
+            contego en mi clase el término "ía".</p>
+    </div>
+    <h5>EJERCICIO 8 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                [class^="flo"] {
+                    background-color: gray;
+                }
+        
+                [class*="e"] {
+                    border: 2px solid black;
+                }
+        
+                [class$="ía"] {
+                    color: violet;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;p class="flor"&gt; Tengo como clase la palabra "flor". Tengo el fondo coloreado ya que empiezo por "flo".&lt;/p&gt;
+            &lt;p class="flores"&gt; Tengo como clase la palabra "flores". Tengo el fondo coloreado ya que empiezo por "flo",
+                también tengo el borde de color negro ya que contengo la letra "e". &lt;/p&gt;
+            &lt;p class="floristería"&gt; Tengo como clase la palabra "floristería". Tengo el fondo coloreado ya que empiezo por
+                "flo", también tengo el borde de color negro ya que contengo la letra "e" y además tengo las letras de color
+                violeta ya que mi clase acaba con las letras "ía". &lt;/p&gt;
+            &lt;p class="avión"&gt; Tengo como clase la palabra avión. Yo no tengo nada de lo anterior ya que no tengo ninguno de
+                esas letras ni terminos en mi clase.&lt;/p&gt;
+            &lt;p class="bahía"&gt; Tengo como clase la palabra batería. Yo sí que tengo las letras en color morado ya que sí que
+                contego en mi clase el término "ía".&lt;/p&gt;
+        &lt;/body&gt;
+        
+        </pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <h5 id="sectores" id="c">C. PSEUDOELEMENTOS:</h5>
+    <hr>
+    <!---EJERCICIO 9-->
+    <h5>EJERCICIO 9 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b> A partir de aquí entramos en el campo de los pseudoelementos, estos se utilizan para estilizar partes
+                concretas de un elemento. Por ejemplo los que utilizamos en el siguiente ejercicio són:
+                "elemento::firstline" y "elemento::firstletter". El primero se utiliza para modificar de alguna manera
+                la primera línea de un elemento (en este caso un párrafo) y el segundo se utiliza para modificar de
+                alguna manera la primera letra de un elemento (también un parrafo).
+                <b></p>
+    </div>
+    <h5>EJERCICIO 9 MUESTREO:</h5>
+    <div class="capsula">
+        <p class="donut">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat natus in optio odio,
+            veritatis corporis expedita atque consequatur voluptatibus. Aspernatur est, omnis sit iste eveniet tempora
+            suscipit velit ullam eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero
+            sequi magnam provident tempora? Optio repellat, dolores possimus illo ratione sint dolore eius enim vero
+            accusantium deleniti quidem neque ipsum?</p>
+        <p class="donut">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae aperiam amet ipsum porro
+            iure ut repellendus consequuntur inventore fuga voluptatem eos numquam aspernatur, dolore officiis nulla
+            quidem corrupti reiciendis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste facilis quos
+            aperiam et voluptas incidunt, reprehenderit cupiditate sit. Nulla ex omnis fugit architecto impedit,
+            assumenda nihil quasi nostrum numquam incidunt!</p>
+    </div>
+    <h5>EJERCICIO 9 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>
+            &lt;head&gt;
+    &lt;style&gt;
+        .donut::first-letter {
+            font-size: 100px;
+        }
+
+        .donut::first-line {
+            background-color: yellow;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p class="donut"&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat natus in optio odio,
+        veritatis corporis expedita atque consequatur voluptatibus. Aspernatur est, omnis sit iste eveniet tempora
+        suscipit velit ullam eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero
+        sequi magnam provident tempora? Optio repellat, dolores possimus illo ratione sint dolore eius enim vero
+        accusantium deleniti quidem neque ipsum?&lt;/p&gt;
+    &lt;p class="donut"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae aperiam amet ipsum porro
+        iure ut repellendus consequuntur inventore fuga voluptatem eos numquam aspernatur, dolore officiis nulla
+        quidem corrupti reiciendis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste facilis quos
+        aperiam et voluptas incidunt, reprehenderit cupiditate sit. Nulla ex omnis fugit architecto impedit,
+        assumenda nihil quasi nostrum numquam incidunt!&lt;/p&gt;
+&lt;/body&gt;
+
+        </pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 10-->
+    <!---CAMBIAR CODIGO ESCRITO-->
+    <h5>EJERCICIO 10 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b> Aquí utilizamos también 3 selectores. Estos 3 selectores son: "elemento:first-child" y
+                "elemento::before/after". El primer pseudoelemento se puede utilizar para modificar o dar estilo al
+                primer elemento derivado de otro. Por último el segundo podrá modificar o añadir algún elemento o
+                atributo antes o despúes de otro. En el siguiente ejercicio hacemos uso de ellos.
+                <b></p>
+    </div>
+    <h5>EJERCICIO 10 MUESTREO:</h5>
+    <div class="capsula">
+        <div class="frutas">
+            <p>Hola yo tengo el fondo coloreado porque soy el primer parrafo dentro del div "frutas".</p>
+            <p>Hola yo no tengo el fondo coloreado porque no soy el primer parrafo del div "frutas".</p>
+            <p>Hola yo no tengo el fondo coloreado porque no soy el primer parrafo del div "frutas".</p>
+        </div>
+    </div>
+    <h5>EJERCICIO 10 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                .frutas p:first-child {
+                    background-color: pink;
+                }
+        
+                .frutas::before {
+                    content: "Hola, este texto aparece antes del div porque contengo el pseudoelemento before";
+                    font-size: small;
+                    color: blue;
+                }
+        
+                .frutas::after {
+                    content: "Hola, este texto aparece después del div porque contengo el pseudoelemento after";
+                    font-size: small;
+                    color: brown;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;div class="frutas"&gt;
+                &lt;p&gt;Hola yo tengo el fondo coloreado porque soy el primer parrafo dentro del div "frutas".&lt;/p&gt;
+                &lt;p&gt;Hola yo no tengo el fondo coloreado porque no soy el primer parrafo del div "frutas".&lt;/p&gt;
+                &lt;p&gt;Hola yo no tengo el fondo coloreado porque no soy el primer parrafo del div "frutas".&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+        </pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 11-->
+    <h5>EJERCICIO 11 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b> Los 3 selectores que utilizamos aquí son: "first-of-type", "last-of-type" y "only-of-type". Estos 3
+                selectores, también se parecen mucho pero tienen funciones distintas. El primer selector "first-of-type"
+                sirve para estilizar o dar atributos a un elemento que es el primero de su tipo en su nivel, por ejemplo
+                el primero dentro de un div. El segundo selector "last-of-type" sirve para estilizar o dar atributos a
+                un elemento que es el último de su tipo en su nivel, por ejemplo el último dentro de un div. El tercero
+                "only-of-type" sirve para estilizar o dar atributos a un elemento que és el único de su tipo en su
+                nivel, si hay más de un elemento del mismo tipo, este pseudoelemento no funcionará .
+                <b></p>
+    </div>
+    <h5>EJERCICIO 11 MUESTREO:</h5>
+    <div class="capsula">
+        <div class="Ej11">
+            <p>TENGO EL FONDO ROJO PORQUE SOY EL PRIMER PARRAFO DEL DIV</p>
+            <p>NO TENGO EL FONDO ROJO PORQUE SOY UN PARRAFO Y NO SOY NI EL PRIMERO NI EL SEGUNDO DEL DIV</p>
+            <span>TENGO EL FONDO DE COLOR LILA PORQUE SOY EL ÚNICO SPAN DEL DIV</span>
+            <p>TENGO EL FONDO VERDE PORQUE SOY EL ÚLTIMO PARRAFO DEL DIV </p>
+        </div>
+        <BR>
+        <div class="Ej11">
+            <p>TENGO EL FONDO ROJO PORQUE SOY EL PRIMER PARRAFO DEL DIV</p>
+            <p>NO TENGO EL FONDO COLOREADO PORQUE SOY UN PARRAFO Y NO SOY NI EL PRIMERO NI EL SEGUNDO DEL DIV</p>
+            <span>TENGO EL FONDO DE COLOR LILA PORQUE SOY EL ÚNICO SPAN DEL DIV</span>
+            <p>TENGO EL FONDO VERDE PORQUE SOY EL ÚLTIMO PARRAFO DEL DIV </p>
+        </div>
+        <br>
+        <div class="Ej11">
+            <p>TENGO EL FONDO ROJO PORQUE SOY EL PRIMER PARRAFO DEL DIV</p>
+            <p>NO TENGO EL FONDO COLOREADO PORQUE SOY UN PARRAFO Y NO SOY NI EL PRIMERO NI EL SEGUNDO DEL DIV</p>
+            <span>SOY UN SPAN Y COMO NO SOY EL ÚNICO DEL DIV YA NO TENGO EL FONDO DE COLOR LILA</span>
+            <br><br>
+            <span>SOY UN SPAN Y COMO NO SOY EL ÚNICO DEL DIV YA NO TENGO EL FONDO DE COLOR LILA</span>
+            <p>NO TENGO EL FONDO ROJO PORQUE SOY UN PARRAFO Y NO SOY NI EL PRIMERO NI EL SEGUNDO DEL DIV</p>
+            <p>TENGO EL FONDO VERDE PORQUE SOY EL ÚLTIMO PARRAFO DEL DIV </p>
+        </div>
+
+    </div>
+    <h5>EJERCICIO 11 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                .Ej11 p:first-of-type {
+                    background-color: red;
+                }
+        
+                .Ej11 p:last-of-type {
+                    background-color: greenyellow;
+                }
+        
+                .Ej11 span:only-of-type {
+                    background-color: purple;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;div class="Ej11"&gt;
+                &lt;p&gt;TENGO EL FONDO ROJO PORQUE SOY EL PRIMER PARRAFO DEL DIV&lt;/p&gt;
+                &lt;p&gt;NO TENGO EL FONDO COLOREADO PORQUE SOY UN PARRAFO Y NO SOY NI EL PRIMERO NI EL SEGUNDO DEL DIV&lt;/p&gt;
+                &lt;span&gt;TENGO EL FONDO DE COLOR LILA PORQUE SOY EL ÚNICO SPAN DEL DIV&lt;/span&gt;
+                &lt;p&gt;TENGO EL FONDO VERDE PORQUE SOY EL ÚLTIMO PARRAFO DEL DIV &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;div class="Ej11"&gt;
+                &lt;p&gt;TENGO EL FONDO ROJO PORQUE SOY EL PRIMER PARRAFO DEL DIV&lt;/p&gt;
+                &lt;p&gt;NO TENGO EL FONDO COLOREADO PORQUE SOY UN PARRAFO Y NO SOY NI EL PRIMERO NI EL SEGUNDO DEL DIV&lt;/p&gt;
+                &lt;span&gt;SOY UN SPAN Y COMO NO SOY EL ÚNICO DEL DIV YA NO TENGO EL FONDO DE COLOR LILA&lt;/span&gt;
+                &lt;br&gt;&lt;br&gt;
+                &lt;span&gt;SOY UN SPAN Y COMO NO SOY EL ÚNICO DEL DIV YA NO TENGO EL FONDO DE COLOR LILA&lt;/span&gt;
+                &lt;p&gt;NO TENGO EL FONDO ROJO PORQUE SOY UN PARRAFO Y NO SOY NI EL PRIMERO NI EL SEGUNDO DEL DIV&lt;/p&gt;
+                &lt;p&gt;TENGO EL FONDO VERDE PORQUE SOY EL ÚLTIMO PARRAFO DEL DIV &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;</pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 12-->
+    <h5>EJERCICIO 12 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b> Los 2 selectores que utilizamos aquí son: "nth-child" y "nth-last-of-type". Este primero nos sirve para
+                seleccionar un elemento que sea él "x" número de veces de su nivel, por ejemplo para seleccionar el 9º
+                párrafo de un mismo div. El segundo pseudoelemento hace la misma función pero empezando desde el último.
+                <b></p>
+    </div>
+    <h5>EJERCICIO 12 MUESTREO:</h5>
+    <div class="capsula">
+        <div class="LOREM">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                maxime
+                ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                inventore?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                maxime
+                ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                inventore?</p>
+            <p>ESTOY COLOREADO PORQUE SOY EL 3r PÁRRAFO</p>
+            <br>
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                maxime
+                ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                inventore?</span>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                maxime
+                ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                inventore?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                maxime
+                ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                inventore?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                maxime
+                ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                inventore?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                maxime
+                ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                inventore?</p>
+            <br>
+            <span>ESTOY COLOERADO PORQUE SOY EL 1r SPAN EMPEZANDO POR ATRÁS.</span>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                maxime
+                ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                inventore?</p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <h5>EJERCICIO 12 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                .LOREM {
+                    font-size: 10px;
+                }
+        
+                .LOREM p:nth-child(3) {
+                    color: red;
+                    font-size: 15px;
+                }
+        
+                .LOREM span:nth-last-of-type(1) {
+                    color: purple;
+                    font-size: 15px;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;div class="Ej11"&gt;
+                &lt;p&gt;TENGO EL FONDO ROJO PORQUE SOY EL PRIMER PARRAFO DEL DIV&lt;/p&gt;
+                &lt;p&gt;NO TENGO EL FONDO COLOREADO PORQUE SOY UN PARRAFO Y NO SOY NI EL PRIMERO NI EL SEGUNDO DEL DIV&lt;/p&gt;
+                &lt;span&gt;TENGO EL FONDO DE COLOR LILA PORQUE SOY EL ÚNICO SPAN DEL DIV&lt;/span&gt;
+                &lt;p&gt;TENGO EL FONDO VERDE PORQUE SOY EL ÚLTIMO PARRAFO DEL DIV &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="LOREM"&gt;
+                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                    maxime
+                    ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                    inventore?&lt;/p&gt;
+                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                    maxime
+                    ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                    inventore?&lt;/p&gt;
+                &lt;p&gt;ESTOY COLOREADO PORQUE SOY EL 3r PÁRRAFO&lt;/p&gt;
+                &lt;br&gt;
+                &lt;span&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                    maxime
+                    ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                    inventore?&lt;/span&gt;
+                &lt;br&gt;
+                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                    maxime
+                    ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                    inventore?&lt;/p&gt;
+                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                    maxime
+                    ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                    inventore?&lt;/p&gt;
+                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                    maxime
+                    ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                    inventore?&lt;/p&gt;
+                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                    maxime
+                    ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                    inventore?&lt;/p&gt;
+                &lt;br&gt;
+                &lt;span&gt;ESTOY COLOERADO PORQUE SOY EL 1r SPAN EMPEZANDO POR ATRÁS.&lt;/span&gt;
+                &lt;br&gt;
+                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum hic architecto natus tenetur
+                    maxime
+                    ab. Laudantium suscipit dolorum minima officia iusto rem adipisci, dolorem fugiat libero nisi, voluptas
+                    inventore?&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;</pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <!---EJERCICIO 13-->
+    <h5>EJERCICIO 13 EXPLICACIÓN:</h5>
+    <div class="capsula2">
+        <p><b> Por último, la sintáxis de estos dos elementos: "elemento:hover" y "elemento:focus". El primero, para
+                cuando pasemos el ratón por encima de un elemento. El segundo comunmente para cuando queremos cambiar un
+                elemento "input".
+                <b></p>
+    </div>
+    <h5>EJERCICIO 13 MUESTREO:</h5>
+    <div class="capsula">
+        <div class="ult">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8cbad7101307167.5f1baa33d49e6.gif">
+            <P>¡¡PASA EL RATÓN POR ENCIMA DE LA IMAGEN!!</P>
+        </div>
+        <form>
+            First name: <input type="text" name="firstname">
+        </form>
+        <p>¡¡ESCRIBE ALGO!!</p>
+    </div>
+    <h5>EJERCICIO 13 CÓDIGO REAL:</h5>
+    <div class="capsula">
+        <p>
+        <pre>&lt;head&gt;
+            &lt;style&gt;
+                .ult img:hover {
+                    border: 5px solid black;
+                }
+        
+                input:focus {
+                    background-color: yellow;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;div class="ult"&gt;
+                &lt;img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8cbad7101307167.5f1baa33d49e6.gif"&gt;
+                &lt;P&gt;¡¡PASA EL RATÓN POR ENCIMA DE LA IMAGEN!!&lt;/P&gt;
+            &lt;/div&gt;
+            &lt;form&gt;
+                First name: &lt;input type="text" name="firstname"&gt;
+            &lt;/form&gt;
+            &lt;p&gt;¡¡ESCRIBE ALGO!!&lt;/p&gt;
+        &lt;/body&gt;
+        
+        </pre>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <br>
+</body>

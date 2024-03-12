@@ -1,0 +1,111 @@
+
+a:link {
+    color: brown;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: green;
+}
+
+header {
+    border: 5px solid black;
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    background-image: url("https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2022/02/lastdayofpompeii.jpg");
+    background-size: cover;
+}
+
+header h1 {
+    padding: 35px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+#hr1 {
+    border: 5px dashed black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#hr2 {
+    border: 2px black solid;
+    width: 90.40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#hr3 {
+    border: 5px dashed black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+nav {
+    border: 5px solid black;
+    width: 19.35%;
+    height: 64.5vh;
+    margin-left: 4.7%;
+    font-size: 20px;
+    float: left;
+}
+
+nav img {
+    border: 2px black dashed;
+    width: 70%;
+    margin-left: 5%;
+    animation: takata infinite  5s;
+}
+
+@keyframes takata {
+
+}
+
+section {
+    width: 70%;
+    height: 30%;
+    border: 5px solid black;
+    margin-right: 4.7%;
+    column-count: 2;
+}
+
+section p {
+    margin: 5%;
+    text-align: justify;
+}
+
+section img {
+    width: 25%;
+    margin: 5%;
+    float: right;
+}
+
+footer {
+    border: 5px solid black;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+}
+
+footer p  {
+    font-size: 10px;
+    color: grey;
+    text-align: center;
+    margin: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+}

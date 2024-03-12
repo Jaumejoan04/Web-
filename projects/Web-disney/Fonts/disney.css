@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "InspireTWDC";
+    src: url(Fonts/InspireTWDC-Black.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "InspireTWDC";
+    src: url(Fonts/InspireTWDC-Roman-0679a1b070d1.woff);
+    font-weight: normal;
+}
+
+* {
+    font-family: "InspireTWDC";
+}
+
+:root {
+    --white-color: #f8f8f8;
+    --black-color: #222222;
+    --background-color: #f1f2f3;
+    --dark-blue: #050d40;
+    --light-blue: #0074d5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'InspireTWDC';
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+header {
+    width: 100%;
+    height: 63px;
+    line-height: 63px;
+    vertical-align: middle;
+}
+
+nav>* {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+nav {
+    background-color: white;
+    font-size: 14px;
+}
+
+nav img {
+    width: 95px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 13px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #222222;
+    padding-left: 30px;
+}
+
+section {
+    width: 100%;
+    height: 87vh;
+    background-image: url(Images/portada_soul.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    margin: 0;
+    border: 0px solid transparent;
+}
+
+h2 img {
+    position: absolute;
+}
+
+p {
+    margin: 0;
+}
+
+#soulpost {
+    float: right;
+    width: 42%;
+    color: white;
+    height: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#letras {
+    width: 80%;
+}
+
+#souletrasp {
+    font-size: 15px;
+}
+
+#soulpost button {
+    margin-top: 10px;
+    background-color: #0074d5;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    width: 250px;
+    padding: 15px;
+    font-size: 15px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+}
+
+.tablaimg {
+    padding: 15px 10px 0px 10px;
+    background: white;
+    width: 320px;
+    background-clip: content-box;
+}
+
+table img {
+    width: 100%;
+}
+
+table p {
+    margin: 0 10%;
+    vertical-align: middle;
+}
+
+.titulo {
+    font-size: 20px;
+    margin: 10% 10%;
+}
+
+.subt {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.ultimafila {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8%;
+}
+
+.fondo {
+    padding: 0px 11px 0px 11px;
+    background: white;
+    background-clip: content-box;
+}
+
+#tira {
+    vertical-align: baseline;
+}
+
+#novedades {
+    background-color: #030C40;
+    color: white;
+    margin: 0%;
+}
+
+#novedades h2 {
+    text-align: center;
+    font-weight: 400;
+    padding: 40px 0px 40px 0px;
+    font-size: 30px;
+}
+
+#novedades ul {
+    list-style-type: none;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#novedades ul img {
+    width: 31.5%;
+    border-radius: 4px;
+}
+
+#novedades ul li {
+    display: inline;
+    text-align: center;
+}
+
+#enmedio {
+    margin: 0 auto;
+}
+
+#hola {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 110px;
+    top: 50px;
+}
+
+#titulo1 {
+    width: 450px;
+    font-size: 18px;
+}
+
+#titulo2 {
+    width: 450px;
+    font-size: 18px;
+}
+
+#titulo3 {
+    font-size: 18px;
+}
+
+#containermarcas {
+    width: 50%;
+    margin: 25px auto;
+}
+
+#marcas {
+    width: 100%;
+}
+
+#novedades button {
+    background-color: #0074d5;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    width: 250px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+#corazon {
+    margin: 0 auto;
+}
